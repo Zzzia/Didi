@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="6dp"
+    android:transitionName="card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_home_rv_imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_home_rv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_home_rv_imageView"
+            android:layout_toRightOf="@id/item_home_rv_imageView"
+            android:text="Zzzia"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_home_rv_normal_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_home_rv_imageView"
+            android:layout_toRightOf="@id/item_home_rv_imageView"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="150dp"
+            android:text="求一个伞友求一个伞友求一个伞友求一个伞友求一个伞友" />
+
+        <TextView
+            android:id="@+id/item_home_rv_normal_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/item_home_rv_imageView"
+            android:layout_marginRight="5dp"
+            android:text="南岸区" />
+
+        <TextView
+            android:id="@+id/item_home_rv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_home_rv_normal_location"
+            android:layout_below="@id/item_home_rv_normal_location"
+            android:text="520m"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/item_home_rv_normal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_home_rv_imageView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="100积分"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
