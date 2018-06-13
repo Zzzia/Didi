@@ -16,6 +16,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.zia.didi.R
+import com.zia.didi.util.Java2Kotlin
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -52,7 +53,12 @@ class HomeFragment : Fragment() {
                         val context = holder.itemView.context
                         val intent = Intent(context, DetailActivity::class.java)
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                            val options = ActivityOptions.makeSceneTransitionAnimation(context as Activity?, Pair.create(holder.itemView, "card"))
+                            val p = arrayListOf<Pair<View, String>>(Pair.create(holder.itemView, "card"),
+                                    Pair.create(holder.name, "name"),
+                                    Pair.create(holder.image, "image"),
+                                    Pair.create(holder.introduce, "introduce"),
+                                    Pair.create(holder.sex, "sex"))
+                            val options = ActivityOptions.makeSceneTransitionAnimation(context as Activity?, *Java2Kotlin.getPairs(p))
                             context.startActivity(intent, options.toBundle())
                         } else {
                             context.startActivity(intent)
@@ -69,6 +75,7 @@ class HomeFragment : Fragment() {
             val location = itemView.findViewById<TextView>(R.id.item_home_rv_normal_location)
             val distance = itemView.findViewById<TextView>(R.id.item_home_rv_distance)
             val price = itemView.findViewById<TextView>(R.id.item_home_rv_normal_price)
+            val sex = itemView.findViewById<ImageView>(R.id.item_home_rv_sex)
         }
     }
 }

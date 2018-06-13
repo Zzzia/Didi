@@ -19,7 +19,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="25dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            android:transitionName="image" />
 
         <TextView
             android:id="@+id/item_home_rv_name"
@@ -29,7 +30,17 @@
             android:layout_toRightOf="@id/item_home_rv_imageView"
             android:text="Zzzia"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:transitionName="name" />
+
+        <ImageView
+            android:id="@+id/item_home_rv_sex"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_home_rv_name"
+            android:src="@mipmap/female"
+            android:transitionName="sex" />
 
         <TextView
             android:id="@+id/item_home_rv_normal_introduce"
@@ -40,7 +51,8 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:maxWidth="150dp"
-            android:text="求一个伞友求一个伞友求一个伞友求一个伞友求一个伞友" />
+            android:text="求一个伞友求一个伞友求一个伞友求一个伞友求一个伞友"
+            android:transitionName="introduce" />
 
         <TextView
             android:id="@+id/item_home_rv_normal_location"

@@ -17,11 +17,55 @@
         android:transitionName="card"
         app:cardBackgroundColor="#ffffff">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="QAQ" />
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/detail_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/ic_launcher"
+                android:transitionName="image" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/detail_image"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/detail_image"
+                android:text="Zzzia"
+                android:textColor="@color/colorPrimary"
+                android:transitionName="name" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/female"
+                android:transitionName="sex"
+                android:layout_alignLeft="@id/detail_name"
+                android:layout_below="@id/detail_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/detail_image"
+                android:layout_marginTop="20dp"
+                android:text="求一个伞友求一个伞友求一个伞友求一个伞友求一个伞友"
+                android:transitionName="introduce" />
+
+            <Button
+                android:id="@+id/detail_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="帮助TA" />
+        </RelativeLayout>
+
+
     </android.support.v7.widget.CardView>
 
 </LinearLayout>
