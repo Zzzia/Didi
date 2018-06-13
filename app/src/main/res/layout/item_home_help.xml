@@ -61,10 +61,11 @@
             android:layout_alignParentRight="true"
             android:layout_alignTop="@id/item_home_rv_imageView"
             android:layout_marginRight="5dp"
-            android:text="南岸区" />
+            android:text="千喜鹤" />
 
         <TextView
             android:id="@+id/item_home_rv_distance"
+            android:transitionName="distance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/item_home_rv_normal_location"

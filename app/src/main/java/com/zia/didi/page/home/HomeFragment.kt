@@ -57,9 +57,13 @@ class HomeFragment : Fragment() {
                                     Pair.create(holder.name, "name"),
                                     Pair.create(holder.image, "image"),
                                     Pair.create(holder.introduce, "introduce"),
-                                    Pair.create(holder.sex, "sex"))
+                                    Pair.create(holder.sex, "sex"),
+                                    Pair.create(holder.distance,"distance"))
+                            val text = holder.introduce.text
+                            holder.introduce.text = ""
                             val options = ActivityOptions.makeSceneTransitionAnimation(context as Activity?, *Java2Kotlin.getPairs(p))
                             context.startActivity(intent, options.toBundle())
+                            holder.introduce.text = text
                         } else {
                             context.startActivity(intent)
                         }
