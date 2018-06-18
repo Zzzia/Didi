@@ -51,7 +51,11 @@
 
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name=".page.map.MapActivity"></activity>
+        <activity android:name=".page.map.MapActivity" />
+        <activity
+            android:name=".page.publish.PublishActivity"
+            android:theme="@style/Translucent"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
     </application>
 
 </manifest>

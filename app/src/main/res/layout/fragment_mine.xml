@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="name"
+            android:text="zzzia"
             android:textColor="#ffffff" />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:layout_marginTop="10dp"
-            android:text="描述..................."
+            android:text="这个app写的真好看"
             android:textColor="#ffffff" />
     </LinearLayout>
 

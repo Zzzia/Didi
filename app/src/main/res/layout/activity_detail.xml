@@ -10,16 +10,16 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/detail_cardView"
-        android:layout_width="250dp"
-        android:layout_height="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:clickable="true"
         android:transitionName="card"
         app:cardBackgroundColor="#ffffff">
 
         <RelativeLayout
-            android:layout_width="250dp"
-            android:layout_height="350dp"
+            android:layout_width="280dp"
+            android:layout_height="400dp"
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -41,6 +41,7 @@
                 android:transitionName="name" />
 
             <ImageView
+                android:id="@+id/detail_sex"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_alignLeft="@id/detail_name"
@@ -59,7 +60,8 @@
                 android:transitionName="distance" />
 
             <TextView
-                android:layout_width="210dp"
+                android:id="@+id/detail_introduce"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/detail_image"
                 android:layout_centerHorizontal="true"
@@ -69,6 +71,7 @@
 
             <Button
                 android:id="@+id/detail_help"
+                android:background="@drawable/bg_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

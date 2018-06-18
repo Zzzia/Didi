@@ -15,6 +15,7 @@
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_nav"
+        android:transitionName="nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/navi" />
