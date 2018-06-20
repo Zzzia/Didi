@@ -4,4 +4,5 @@
 
 你从未见过的厚颜无耻之人
 
-[!img](src='https://github.com/Zzzia/Didi/tree/master/pic/1.gif')
+<img src='https://github.com/Zzzia/Didi/blob/master/pic/login.gif'>
+<img src='https://github.com/Zzzia/Didi/blob/master/pic/home.gif'>
